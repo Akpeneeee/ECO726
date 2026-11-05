@@ -14,7 +14,7 @@ ssc install reghdfe
 ssc install ppmlhdfe
 
 *importing data:
-use LSOAfinal, clear
+use LSOAcompressed, clear
 describe
 summarize
 
@@ -80,7 +80,7 @@ b(%9.3f) se(%9.3f) nodepvars nostar stats(N, fmt(%9.0fc) labels("\$N\$")) ///
 obslast noconstant alignment(D{.}{.}{-1}) varwidth(33) ///
 coeflabels(hypgoldprice "Gold Price" interaction "Treated neighbourhood*Gold price" BIParea "Treated neighbourhood")  ///
 indicate("Month Effects = *month") nomtitles
-*log close
+
 
 
 
